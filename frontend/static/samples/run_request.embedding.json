@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "run_id": "d29ce7fa-435f-4d18-ab53-5412089114cb",
+  "task": "embedding",
+  "model": {
+    "arch": "bert",
+    "root_prefix": "auto",
+    "notes": "sample"
+  },
+  "tokenization": {
+    "max_length": 8,
+    "padding": "max_length",
+    "truncation": "longest_first"
+  },
+  "options": {
+    "embedding_pooling": "mean",
+    "embedding_normalize": "l2",
+    "top_k": 10,
+    "classifier_prob": "none"
+  },
+  "inputs": {
+    "texts": [
+      "hello world"
+    ],
+    "query": "",
+    "docs": []
+  },
+  "encoded": {
+    "input_ids": [[101, 7592, 2088, 102, 0, 0, 0, 0]],
+    "attention_mask": [[1, 1, 1, 1, 0, 0, 0, 0]],
+    "token_type_ids": [[0, 0, 0, 0, 0, 0, 0, 0]]
+  }
+}
